@@ -1,12 +1,24 @@
+if keyboard_check(vk_shift) {
+	faster = true
+} else {
+	faster = false	
+}
+
+if faster = true {
+	superSpeed = 20
+}
+
 if keyboard_check(vk_left) {
-	x -= 10;	
+	x -= superSpeed;	
 }
 if keyboard_check(vk_right) {
-	x += 10;	
+	x += superSpeed;	
 }
 if keyboard_check(vk_up) {
-	y -= 10;	
+	y -= superSpeed;	
 }
 if keyboard_check(vk_down) {
-	y += 10;	
+	y += superSpeed;	
 }
+
+superSpeed = 10;
